@@ -1,18 +1,13 @@
 # Ejercicio 10: Concatenar listas
-
-def check_lists(lista1, lista2):
+def concatenate_lists(lista1, lista2):
     """
-    Verifica si ambas listas tienen el mismo elemento en la tercera posición.
-    Si alguna de las listas no tiene un tercer elemento, retorna False.
+    Concatena dos listas en una sola.
 
     Args:
         lista1: Primera lista
         lista2: Segunda lista
 
     Returns:
-        True si ambas listas tienen el mismo tercer elemento, False en caso contrario
+        Una nueva lista con todos los elementos de lista1 seguidos de lista2
     """
-    if len(lista1) > 2 and len(lista2) > 2 and lista1[2] == lista2[2]:
-        return True
-    else:
-        return False
+    return lista1 + lista2
