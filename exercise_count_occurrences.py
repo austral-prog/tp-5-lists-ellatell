@@ -1,14 +1,13 @@
 # Ejercicio 7: Contar ocurrencias de un elemento
-
-def concatenate_lists(lista1, lista2):
+def count_occurrences(lista, elemento):
     """
-    Concatena dos listas en una sola.
+    Cuenta cuántas veces aparece un elemento en la lista.
 
     Args:
-        lista1: Primera lista
-        lista2: Segunda lista
+        lista: Una lista de elementos
+        elemento: El elemento a buscar
 
     Returns:
-        Una nueva lista con todos los elementos de lista1 seguidos de lista2
+        Un entero con la cantidad de veces que aparece el elemento
     """
-    return lista1 + lista2
+    return lista.count(elemento)
