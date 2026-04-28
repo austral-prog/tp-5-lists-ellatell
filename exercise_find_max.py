@@ -1,14 +1,14 @@
 # Ejercicio 5: Encontrar el máximo en una lista
 
-def find_max(lista):
+def count_occurrences(lista, elemento):
     """
-    Encuentra y retorna el valor máximo en una lista de números.
-    Si la lista está vacía, retorna None.
+    Cuenta cuántas veces aparece un elemento en la lista.
 
     Args:
-        lista: Una lista de números
+        lista: Una lista de elementos
+        elemento: El elemento a buscar
 
     Returns:
-        El valor máximo de la lista o None si está vacía
+        Un entero con la cantidad de veces que aparece el elemento
     """
-    pass  # Reemplazar con tu implementación
+    return lista.count(elemento)
