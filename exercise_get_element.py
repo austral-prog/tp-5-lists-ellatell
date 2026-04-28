@@ -1,16 +1,17 @@
 # Ejercicio 2: Obtener elemento en posición específica
-
-def find_min(lista):
+def get_element(lista, indice):
     """
-    Encuentra y retorna el valor mínimo en una lista de números.
-    Si la lista está vacía, retorna None.
+    Retorna el elemento en la posición indicada.
+    Si el índice está fuera de rango, retorna None.
 
     Args:
-        lista: Una lista de números
+        lista: Una lista de cualquier tipo de elementos
+        indice: Índice del elemento a obtener
 
     Returns:
-        El valor mínimo de la lista o None si está vacía
+        El elemento en la posición indicada o None si está fuera de rango
     """
-    if len(lista) == 0:
+    if -len(lista) <= indice < len(lista):
+        return lista[indice]
+    else:
         return None
-    return min(lista)
