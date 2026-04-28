@@ -1,13 +1,18 @@
 # Ejercicio 9: Verificar si una lista está vacía
 
-def is_empty(lista):
+def get_element(lista, indice):
     """
-    Determina si una lista está vacía.
+    Retorna el elemento en la posición indicada.
+    Si el índice está fuera de rango, retorna None.
 
     Args:
-        lista: Una lista de elementos
+        lista: Una lista de cualquier tipo de elementos
+        indice: Índice del elemento a obtener
 
     Returns:
-        True si la lista está vacía, False en caso contrario
+        El elemento en la posición indicada o None si está fuera de rango
     """
-    pass  # Reemplazar con tu implementación
+    if -len(lista) <= indice < len(lista):
+        return lista[indice]
+    else:
+        return None
